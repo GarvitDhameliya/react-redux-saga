@@ -1,4 +1,4 @@
-import { all } from "axios";
+import { all } from "redux-saga/effects";
 import { handle_get_user_saga } from "./rootSaga/userSaga";
 
 function* rootSaga() {

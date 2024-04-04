@@ -8,6 +8,7 @@ let sagaMiddleware = createSagaMiddleware();
 const store = createStore(
   rootReducers,
   composeWithDevTools(applyMiddleware(sagaMiddleware))
+  
 );
 
 sagaMiddleware.run(rootSaga);
